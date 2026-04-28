@@ -16,17 +16,17 @@
 
 | Feature | Details |
 |---|---|
-| 🤖 **ML Model** | XGBoost classifier trained on 37 hand-crafted NLP + structural features |
-| 🔍 **SHAP Explainability** | Per-prediction feature contributions — see exactly what triggered the detection |
-| ⚡ **FastAPI Backend** | REST API with `/analyze`, `/model-info`, and `/health` endpoints |
-| 🖥️ **Interactive Dashboard** | Single-file HTML frontend — no build step needed |
-| 🏷️ **Attack Taxonomy** | Auto-classifies into: Credential Harvesting, BEC/CEO Fraud, Malware Delivery, IT Impersonation, Advance Fee |
-| 📊 **4-Axis Risk Scoring** | Independent Urgency / Deception / Authority / Payload scores |
-| 🔦 **Text Highlighting** | Highlights the exact words/phrases that triggered the detection |
+|  **ML Model** | XGBoost classifier trained on 37 hand-crafted NLP + structural features |
+|  **SHAP Explainability** | Per-prediction feature contributions — see exactly what triggered the detection |
+|  **FastAPI Backend** | REST API with `/analyze`, `/model-info`, and `/health` endpoints |
+|  **Interactive Dashboard** | Single-file HTML frontend — no build step needed |
+|  **Attack Taxonomy** | Auto-classifies into: Credential Harvesting, BEC/CEO Fraud, Malware Delivery, IT Impersonation, Advance Fee |
+|  **4-Axis Risk Scoring** | Independent Urgency / Deception / Authority / Payload scores |
+|  **Text Highlighting** | Highlights the exact words/phrases that triggered the detection |
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clone & install dependencies
 
@@ -69,7 +69,7 @@ Just open `frontend/index.html` in your browser. The dashboard auto-connects to 
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 phishguard/
@@ -95,7 +95,7 @@ phishguard/
 
 ---
 
-## 🌐 API Reference
+##  API Reference
 
 ### `POST /analyze`
 
@@ -143,7 +143,7 @@ Interactive Swagger docs available at: **`http://127.0.0.1:8000/docs`**
 
 ---
 
-## 📊 Model Performance
+##  Model Performance
 
 | Metric | Score |
 |---|---|
@@ -153,12 +153,12 @@ Interactive Swagger docs available at: **`http://127.0.0.1:8000/docs`**
 | CV F1 (5-fold) | **1.000 ± 0.000** |
 | False Positive Rate | **0.0%** |
 
-> ⚠️ **Note:** Perfect scores are expected on the small synthetic dataset (53 samples).  
+>  **Note:** Perfect scores are expected on the small synthetic dataset (53 samples).  
 > With real-world PhishTank + CEAS-08 data (~10k+ samples), expect F1 ~0.97–0.99.
 
 ---
 
-## 🧠 Feature Engineering (37 Features)
+##  Feature Engineering (37 Features)
 
 | Group | Features |
 |---|---|
@@ -185,7 +185,7 @@ Interactive Swagger docs available at: **`http://127.0.0.1:8000/docs`**
 
 ---
 
-## 🔄 Using Real-World Datasets
+##  Using Real-World Datasets
 
 To upgrade from the synthetic dataset to real phishing data, swap the data loader in `train.py`:
 
@@ -209,7 +209,7 @@ def load_kaggle_datasets():
 
 ---
 
-## 📚 References
+##  References
 
 - Lundberg & Lee (2017) — *A Unified Approach to Interpreting Model Predictions* (SHAP)
 - Ribeiro et al. (2016) — *"Why Should I Trust You?" Explaining the Predictions of Any Classifier* (LIME)
@@ -218,6 +218,6 @@ def load_kaggle_datasets():
 
 ---
 
-## 📄 License
+##  License
 
 MIT License — free to use, modify, and distribute.
